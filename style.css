@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');body{
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'rubik';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#main-container{
+    display: flex;
+    width: 900px;
+    margin-top:120px;
+    display: flex;
+    height: 350px;
+}
+#appender{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 350px;
+}
+.report-board{
+    background-color: hsl(235, 46%, 20%);
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+}
+.report-board a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0 10px 20px;
+    color: hsl(235, 45%, 61%);
+}
+.report-board a:hover{
+    color: hsl(236, 100%, 87%);
+}
+.profile-card {
+    background-color: hsl(246, 80%, 60%);
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.profile-card img{
+    width: 50px;
+     border:  2px solid hsl(0, 0%, 100%);
+     border-radius: 50%;
+}
+.profile-card p{
+    margin: 10px 0 0 0;
+    color: hsl(236, 100%, 87%);
+    margin-top: 30px;
+}
+.profile-card h1{
+    color: hsl(0,0%,100%) ;
+    font-weight: 100;
+}
+.profile-card h1 span{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    background-color:hsl(235, 46%, 20%);
+    padding: 40px 20px;
+    border-radius: 20px 20px  10px 10px;
+    height: 150px;
+}
+.container:hover{
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+.title-container{
+    display: flex;
+    width: 100%;
+    color: hsl(0,0%,100%);
+    justify-content: space-between;
+}
+img{
+    display: block;
+    margin-top: 8px;
+}
+.container h1{
+    margin: 10px 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 200;
+}
+.container p{
+    font-size: small;
+    color: hsl(236, 100%, 87%);
+}
+.time-tracking-container{
+    padding-top: 30px;
+    width:26%;
+    border-radius: 12px;
+    margin:5px;
+    background-position: top 0px right 10px;
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+
+
+@media screen and (max-width:500px){
+    .container-wrapper {
+            display: block;
+            width: 100%;
+            padding: 0 30px ;
+            margin-bottom: 100px;
+        }
+    
+        #main-container {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            height: auto;
+        }
+    
+        #appender {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 50px 0;
+        }
+    
+        .report-board {
+            background-color: hsl(235, 46%, 20%);
+            width: 100%;
+            margin-right: 0;
+            height: auto;
+        }
+        .report-board .button-container{
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-content: center;
+        }
+        .report-board a {
+            margin: 40px 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .profile-card {
+            width: 100%;
+            height: 140px;
+            padding:10px;
+            display: flex;
+         }
+        .profile-card img {
+             width: 60px;
+             margin: 30px 20px 0 0;
+             border-radius: 50%;
+        }
+        .profile-card h1 span {
+            display: inline;
+        }
+        .time-tracking-container {
+            padding-top: 30px;
+            width: 100%;
+            margin: 25px 0;
+        }
+        .container p {
+            font-size: 16px;
+            margin-top: 25px;
+        }
+        .timeframes{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- wrapping  container  -->
+<div class="container-wrapper">
+   
+  <!-- main container -->
+
+ <div id="main-container" >
+
+  <!-- report div containing the profile and button container -->
+  <div class="report-board">
+    <!-- profile container  -->
+   <div class="profile-card">
+    <div>
+          <img src="image-jeremy.png" alt="image-jeremy">
+    </div>
+
+    <div>
+      <p>Report for</p>
+    <h1>
+      <span>Jeremy</span>
+      <span>Robson</span>
+    </h1>
+  </div>
+
+   </div>
+
+   <!-- button container  -->
+    <div class="button-container">
+      <a href="#" onclick="displayOption('daily')">Daily</a>
+      <a href="#" onclick="displayOption('weekly')">Weekly</a>
+      <a href="#" onclick="displayOption('monthly')">Monthly</a>
+    </div>
+    <!-- end of button container-->
+  </div>
+  <!-- report analysis -->
+  <div id="appender"></div>
+  <!-- report analysis end  -->
+</div> 
+<!-- End Main Container -->
+</div>
+
+</body>
+<script src="file.js"></script>
+</html>
